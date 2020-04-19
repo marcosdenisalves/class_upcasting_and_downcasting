@@ -1,6 +1,6 @@
 package entities;
 
-public class Account {
+public abstract class Account {
 
 	protected Integer number;
 	protected String holder;
@@ -37,7 +37,7 @@ public class Account {
 	}
 
 	public void deposit(double amount) {
-		this.balance = amount;
+		this.balance += amount;
 	}
 
 	public void withdraw(double amount) {
